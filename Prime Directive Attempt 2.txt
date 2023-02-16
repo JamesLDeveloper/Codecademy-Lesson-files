@@ -1,0 +1,48 @@
+// Import statement:
+import java.util.ArrayList;
+
+class PrimeDirective {
+
+    // Add your methods here:
+    public int void isPrime() {
+
+        int numberInSequence;
+        int numberToDivideBy;
+
+        numberInSequence = 6;
+        numberToDivideBy = 2;
+
+        for (numberToDivideBy = 2; numberToDivideBy < numberInSequence; numberInSequence++) {
+            if ((numberToDivideBy % numberInSequence) != 0) {
+                System.out.println(numberToDivideBy + "is Prime");
+
+            }
+
+
+        }
+
+    }
+
+/*if ((number % x) != 0)
+{
+return true;
+} else {
+  return false;
+
+  }
+
+  }
+
+*/
+
+
+
+
+        public static void main(String[] args) {
+
+            PrimeDirective pd = new PrimeDirective();
+            int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
+
+        }
+
+    }

@@ -1,0 +1,63 @@
+public class Calculator {
+
+/*The calculator will find totals, differences, products, factors and remainders of two different inputs*/
+
+double a;
+double b;
+
+public Calculator(double inputA, double inputB) {
+a = inputA;
+b = inputB;
+}
+
+public double add(double a, double b){
+double total = a + b;
+System.out.println("The total is " + total);
+return total;
+}
+
+public double subtract(double a, double b){
+double difference = a - b;
+System.out.println("The difference is " + difference);
+return difference;
+}
+
+public double multiply(double a, double b){
+double product = a * b;
+System.out.println("The product is " + product);
+return product;
+}
+
+public double divide(double a, double b){
+double factor = a / b;
+System.out.println("The factor is " + factor);
+return factor;
+}
+
+public double modulo(double a, double b){
+double remainder = a % b;
+System.out.println("The remainder is " + remainder);
+return remainder;
+}
+
+public double square(double a, double b){
+double powerTwo = a * a;
+System.out.println("The Square of " + a + " = " + powerTwo);
+return powerTwo;
+
+}
+
+
+public static void main(String [] args){
+Calculator myCalculator = new Calculator(0, 0);
+myCalculator.add(5, 7);
+myCalculator.subtract(35, 47);
+myCalculator.multiply(1350, 403);
+myCalculator.divide(35, 47);
+myCalculator.modulo(15.5, 3);
+myCalculator.square(3, 0);
+
+}
+
+}
+

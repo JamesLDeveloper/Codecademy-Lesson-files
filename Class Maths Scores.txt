@@ -1,0 +1,99 @@
+import java.util.Arrays;
+
+public class Classroom {
+  
+String students;
+double mathScores;
+
+  public static void main(String[] args){
+    
+String[] students = {"Sade", "Alexus", "Sam", "Koma"};  
+double[] mathScores = new double[4];
+
+mathScores[0] = 94.5;
+// sets an array value of 94.5 to slot 1. This corresponds to the first slot in linked arrays (e.g. Classroom) therefore "Sade has been set a math score of 94.5"
+mathScores[2] = 76.8;
+
+System.out.print("The number of students in the class is " + students.length);
+
+  }
+}
+
+
+
+
+
+
+
+
+
+import java.util.Arrays;
+
+public class Classroom {
+  
+String students;
+double mathScores;
+int[] age = {12, 13, 12, 9};
+
+  public static void main(String[] args){
+    
+String[] students = {"Sade", "Alexus", "Sam", "Koma"};  
+double[] mathScores = new double[4];
+
+
+
+
+mathScores[0] = 94.5;
+// sets an array value of 94.5 to slot 1. This corresponds to the first slot in linked arrays (e.g. Classroom) therefore "Sade has been set a math score of 94.5"
+mathScores[2] = 76.8;
+
+System.out.println("The number of students in the class is " + students.length + ".");
+
+String studentNames = Arrays.toString(students);
+System.out.println(studentNames);
+String scoreMathTest = Arrays.toString(mathScores);
+System.out.println(scoreMathTest);
+String yearsOld = Arrays.toString(age); // not working.
+System.out.println(yearsOld);
+
+  }
+}
+
+
+
+
+
+
+
+
+
+import java.util.Arrays;
+
+public class Classroom {
+  
+String students;
+double mathScores;
+
+  public static void main(String[] args){
+    
+String[] students = {"Sade", "Alexus", "Sam", "Koma"};  
+double[] mathScores = new double[4];
+int[] age = {12, 13, 12, 9};
+
+
+
+mathScores[0] = 94.5;
+// sets an array value of 94.5 to slot 1. This corresponds to the first slot in linked arrays (e.g. Classroom) therefore "Sade has been set a math score of 94.5"
+mathScores[2] = 76.8;
+
+System.out.println("The number of students in the class is " + students.length + ".");
+
+String studentNames = Arrays.toString(students);
+System.out.println(studentNames);
+String scoreMathTest = Arrays.toString(mathScores);
+System.out.println(scoreMathTest);
+//String yearsOld = Arrays.toString(age); // not working.
+//System.out.println(yearsOld);
+
+  }
+}

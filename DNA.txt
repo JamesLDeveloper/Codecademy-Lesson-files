@@ -1,0 +1,485 @@
+public class DNA {
+ 
+//This program examines DNA sequences to classify strands and identify and problems in the DNA sequences.
+
+  public static void main(String[] args) {
+    
+String dna1 = "ATGCGATACGCTTGA";
+String dna2 = "ATGCGATACGTGGA";
+String dna3 = "ATTAATATGTACTGA";
+
+String proteinStart = "ATG";
+String proteinEnd = "TGA";
+
+
+
+String dna = "";
+
+dna = dna3;
+
+int proteinStartPosition = dna.indexOf(proteinStart);
+int proteinEndPosition = dna.indexOf(proteinEnd);
+
+int dnaLength = dna.length();
+System.out.println("Length of string " + dna + " is " + dnaLength);
+
+System.out.println("The position of " + proteinStart + " is " + proteinStartPosition);
+System.out.println("The position of " + proteinEnd + " is " + proteinEndPosition);
+
+
+
+//Running code below gives out of bound exception error when looking at strings shorter than the substring values e.g. (dna.substring(12,15).equals(proteinEnd)))
+
+/*if ((dna.substring(0, 3).equals(proteinStart)) && (dna.substring(12, 15).equals(proteinEnd)) && ((dnaLength - 6) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+*/
+
+//Test code - still doesn't work because relies on other variable being true.
+
+if ( 
+  (dna.substring(0,3).equals(proteinStart))
+  
+   &&   
+   
+    ((dna.substring((dnaLength - 3), dnaLength)).equals(proteinEnd))
+
+)            
+
+{
+
+if ((dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart)) && (dna.substring(proteinEndPosition, (proteinEndPosition + 3)).equals(proteinEnd)) && ((dnaLength - 6) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+
+
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+
+
+
+
+
+
+
+
+
+//Use code below instead
+/*
+if ((proteinStartPosition != -1) && (proteinEndPosition != -1) && ((dnaLength - 6) % 3 == 0)) {
+ 
+  System.out.println(dna + " is a protein.");
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+
+*/
+
+    //  -. .-.   .-. .-.   .
+    //    \   \ /   \   \ / 
+    //   / \   \   / \   \  
+    //  ~   `-~ `-`   `-~ `-
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class DNA {
+ 
+//This program examines DNA sequences to classify strands and identify and problems in the DNA sequences.
+
+  public static void main(String[] args) {
+    
+String dna1 = "ATGCGATACGCTTGA";
+String dna2 = "ATGCGATACGTGGA";
+String dna3 = "ATTAATATGTACTGA";
+
+String proteinStart = "ATG";
+String proteinEnd = "TGA";
+
+
+
+String dna = "";
+
+dna = dna1;
+
+int proteinStartPosition = dna.indexOf(proteinStart);
+int proteinEndPosition = dna.indexOf(proteinEnd);
+
+int dnaLength = dna.length();
+System.out.println("Length of string " + dna + " is " + dnaLength);
+
+System.out.println("The position of " + proteinStart + " is " + proteinStartPosition);
+System.out.println("The position of " + proteinEnd + " is " + proteinEndPosition);
+
+
+
+//Running code below gives out of bound exception error when looking at strings shorter than the substring values e.g. (dna.substring(12,15).equals(proteinEnd)))
+
+/*if ((dna.substring(0, 3).equals(proteinStart)) && (dna.substring(12, 15).equals(proteinEnd)) && ((dnaLength - 6) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+*/
+
+//Improved code which now doesn't rely on variables being true 
+
+if ( 
+  (dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart))
+  
+   &&   
+   
+    ((dna.substring((dnaLength - 3), dnaLength)).equals(proteinEnd))
+
+)            
+
+{
+
+if ((dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart)) && ((dna.substring((dnaLength - 3), dnaLength)).equals(proteinEnd)) && ((proteinEndPosition - proteinStartPosition) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+
+
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+
+//Codecadamy suggested code below instead
+/*
+if ((proteinStartPosition != -1) && (proteinEndPosition != -1) && ((dnaLength - 6) % 3 == 0)) {
+ 
+  System.out.println(dna + " is a protein.");
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+
+*/
+
+    //  -. .-.   .-. .-.   .
+    //    \   \ /   \   \ / 
+    //   / \   \   / \   \  
+    //  ~   `-~ `-`   `-~ `-
+ 
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class DNA {
+ 
+//This program examines DNA sequences to classify strands and identify and problems in the DNA sequences.
+
+  public static void main(String[] args) {
+    
+String dna1 = "ATGCGATACGCTTGA";
+String dna2 = "ATGCGATACGTGGA";
+String dna3 = "ATTAATATGTACTGA";
+String dna4 = "ATT";
+
+String proteinStart = "ATG";
+String proteinEnd = "TGA";
+
+
+
+String dna = "";
+
+dna = dna4;
+
+int proteinStartPosition = dna.indexOf(proteinStart);
+int proteinEndPosition = dna.indexOf(proteinEnd);
+
+int dnaLength = dna.length();
+System.out.println("Length of string " + dna + " is " + dnaLength);
+
+System.out.println("The position of " + proteinStart + " is " + proteinStartPosition);
+System.out.println("The position of " + proteinEnd + " is " + proteinEndPosition);
+
+
+
+//Running code below gives out of bound exception error when looking at strings shorter than the substring values e.g. (dna.substring(12,15).equals(proteinEnd)))
+
+/*if ((dna.substring(0, 3).equals(proteinStart)) && (dna.substring(12, 15).equals(proteinEnd)) && ((dnaLength - 6) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+*/
+
+
+
+//Improved code which now doesn't rely on variables being true 
+
+/* if ( 
+  (dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart))
+  
+   &&   
+   
+    ((dna.substring((dnaLength - 3), dnaLength)).equals(proteinEnd))
+
+)            
+
+{
+*/
+
+//Code above now superfluous as code below ammended to include the necessary parts.
+/*
+
+if ((dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart)) && ((dna.substring((dnaLength - 3), dnaLength)).equals(proteinEnd)) && ((proteinEndPosition - proteinStartPosition) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+
+/*
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+*/
+
+
+//Codecadamy suggested code below instead
+
+if ((proteinStartPosition != -1) && (proteinEndPosition != -1) && ((dnaLength - 6) % 3 == 0)) {
+ 
+  System.out.println(dna + " is a protein.");
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+
+
+
+    //  -. .-.   .-. .-.   .
+    //    \   \ /   \   \ / 
+    //   / \   \   / \   \  
+    //  ~   `-~ `-`   `-~ `-
+ 
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Still work in progress.
+
+
+public class DNA {
+
+//This program examines DNA sequences to classify strands and identify and problems in the DNA sequences.
+
+    public static void main(String[] args) {
+
+        String dna1 = "ATGCGATACGCTTGA";
+        String dna2 = "ATGCGATACGTGGA";
+        String dna3 = "ATTAATATGTACTGA";
+        String dna4 = "ATT";
+        String dna5 = "AGHDKFNFKDK";
+        String dna6 = "ATGATATGFTGATATGA";
+        String dna7 = "ATGCGATACTGAGCT";
+
+
+        String proteinStart = "ATG";
+        String proteinEnd = "TGA";
+        String proteinStartAnomaly = "ATGA";
+
+
+
+        String dna = "";
+
+        dna = dna6;
+
+        int proteinStartPosition = dna.indexOf(proteinStart);
+        int proteinEndPosition = dna.indexOf(proteinEnd);
+        int afterProteinStart = (dna.indexOf(proteinStartPosition)) + 2;
+        
+        int dnaLength = dna.length();
+        System.out.println("Length of string " + dna + " is " + dnaLength);
+
+        System.out.println("The position of " + proteinStart + " is " + proteinStartPosition);
+        System.out.println("The position of " + proteinEnd + " is " + proteinEndPosition);
+
+
+
+//Running code below gives out of bound exception error when looking at strings shorter than the substring values e.g. (dna.substring(12,15).equals(proteinEnd)))
+
+/*if ((dna.substring(0, 3).equals(proteinStart)) && (dna.substring(12, 15).equals(proteinEnd)) && ((dnaLength - 6) % 3 == 0))  
+{
+System.out.println(dna + " is a protein.");
+
+} else {
+System.out.println(dna + " is not a protein.");
+}
+*/
+
+
+//Improved Code but doesn't catch all eventualities'
+
+        if ((dna.substring(proteinStartPosition, (proteinStartPosition + 4))).equals(proteinStartAnomaly))
+        {
+     
+          
+               
+             proteinEndPosition = dna.indexOf(substring(afterProteinStart, dnaLength));
+
+            
+             
+            
+            
+             
+            System.out.println("Anomaly Detected");
+
+
+
+        }
+
+
+
+        if ((proteinStartPosition != -1) && (proteinEndPosition !=-1) && (((proteinEndPosition - proteinStartPosition) > 1)) && (dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart)))
+
+        {
+
+            if ((dna.substring(proteinStartPosition, (proteinStartPosition + 3)).equals(proteinStart)) && ((dna.substring(proteinEndPosition, proteinEndPosition + 3)).equals(proteinEnd)) && ((proteinEndPosition - proteinStartPosition) % 3 == 0))
+            {
+                System.out.println(dna + " is a protein.");
+
+            } else {
+                System.out.println(dna + " is not a protein.");
+            }
+
+        } else {
+
+            System.out.println(dna + " is not a protein.");
+
+        }
+
+
+
+//Codecadamy suggested code below instead
+/*
+if ((proteinStartPosition != -1) && (proteinEndPosition != -1) && ((proteinEndPosition - proteinStartPosition) % 3 == 0)) {
+ 
+  System.out.println(dna + " is a protein.");
+
+} else {
+
+System.out.println(dna + " is not a protein.");
+
+}
+
+*/
+
+        //  -. .-.   .-. .-.   .
+        //    \   \ /   \   \ / 
+        //   / \   \   / \   \  
+        //  ~   `-~ `-`   `-~ `-
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+}

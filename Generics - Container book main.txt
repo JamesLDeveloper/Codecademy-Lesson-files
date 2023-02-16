@@ -1,0 +1,72 @@
+public class Container <T> {
+private T data;
+
+public Container(T data) {
+  this.data = data;
+}
+
+
+public void setData(T data) {
+  this.data = data;
+  
+}
+
+public T getData() {
+return this.data;
+
+}
+
+}
+
+
+
+
+
+
+
+public class Book {
+  private String name;
+
+  public Book(String name) {
+    this.name = name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getName() {
+    return this.name;
+  }
+
+  public String toString() {
+    return "Book(name = \""
+    + this.name 
+    + "\")";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+public class Main {
+  public static void main(String[] args) {
+    String myWord = "Hello";
+    Book myBook = new Book("My Book");
+    // Create `Container` references and print statement below...
+
+Container<String> wordContainer = new Container<String> (myWord);
+Container<Book> bookContainer = new Container<Book> (myBook);
+
+System.out.println(wordContainer.getData());
+/*use bookContainer.getData rather than bookContainter.getName as we are using the Container class to fetch data rather than book class because the objects we are calling are objetcs of the container class rather than the book class.*/
+System.out.println(bookContainer.getData());
+    
+  }
+}

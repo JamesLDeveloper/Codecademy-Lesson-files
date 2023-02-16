@@ -1,0 +1,42 @@
+//Error as int sum will reset sum to zero everytime before adding the next number. System.print.ln(sum) can't access sum as it is defined within the for method.
+public class ScopeExample{
+  public static void main(String[] args){
+
+    int[] myArray = {1, 2, 3, 4};
+
+   
+    for(int i = 0; i < myArray.length; i++){
+       int sum = 0;
+      sum += myArray[i];
+    }
+
+    System.out.println(sum);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//moving int sum befofe the for method means it can be accessed by things outside the for method.
+public class ScopeExample{
+  public static void main(String[] args){
+
+    int[] myArray = {1, 2, 3, 4};
+
+    int sum = 0;
+    for(int i = 0; i < myArray.length; i++){
+      
+      sum += myArray[i];
+    }
+
+    System.out.println(sum);
+  }
+}

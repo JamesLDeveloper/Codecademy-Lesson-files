@@ -1,0 +1,1 @@
+curl -d '{  "id": "353",  "date": "05/05/2022", "country": "Korea", "city": "Jeju City", "state": "Jeju Province", "numPhotos": "96", "blogCompleted": "false" }'  -H "Content-Type: application/json" localhost:4001/traveladventures

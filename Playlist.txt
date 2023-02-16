@@ -1,0 +1,294 @@
+import java.util.ArrayList;
+
+class Playlist {
+
+    public static void main(String[] args) {
+
+
+        ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+        ArrayList<String> artists = new ArrayList<String>();
+
+        desertIslandPlaylist.add("Glorius");
+        desertIslandPlaylist.add("I bet you look good on the dancefloor");
+        desertIslandPlaylist.add("I love you");
+        desertIslandPlaylist.add("Things I'll never say");
+        desertIslandPlaylist.add("My World");
+        desertIslandPlaylist.add("You're Gorgeous");
+
+
+        artists.add("Andreas Johnson");
+        artists.add("Arctic Monkeys");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Bluebird");
+
+System.out.println(desertIslandPlaylist.get(0));
+System.out.println(desertIslandPlaylist.toString());
+
+System.out.println(artists.get(0));
+System.out.println(artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+        desertIslandPlaylist.remove("Glorius");
+System.out.println(desertIslandPlaylist.toString());
+        artists.remove("Andreas Johnson");
+System.out.println(artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+        System.out.println(desertIslandPlaylist.indexOf("You're Gorgeous"));
+        System.out.println(desertIslandPlaylist.indexOf("My World"));
+
+        String songToSwapOne = desertIslandPlaylist.get(4);
+System.out.println(songToSwapOne);
+        desertIslandPlaylist.set(4, "My World");
+        desertIslandPlaylist.set(3, songToSwapOne);
+
+        String artistToSwapOne = artists.get(4);
+        System.out.println(artistToSwapOne);
+        artists.set(4, "Avril Lavigne");
+        System.out.println(artists.toString());
+        artists.set(3, artistToSwapOne);
+
+
+
+        System.out.println(artists.toString());
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.ArrayList;
+
+class Playlist {
+
+    public static void main(String[] args) {
+
+
+        ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+        ArrayList<String> artists = new ArrayList<String>();
+
+        desertIslandPlaylist.add("Glorius");
+        desertIslandPlaylist.add("I bet you look good on the dancefloor");
+        desertIslandPlaylist.add("I love you");
+        desertIslandPlaylist.add("Things I'll never say");
+        desertIslandPlaylist.add("My World");
+        desertIslandPlaylist.add("You're Gorgeous");
+
+
+        artists.add("Andreas Johnson");
+        artists.add("Arctic Monkeys");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Bluebird");
+
+System.out.println(desertIslandPlaylist.get(0));
+System.out.println(desertIslandPlaylist.toString());
+
+System.out.println(artists.get(0));
+System.out.println(artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+        desertIslandPlaylist.remove("Glorius");
+System.out.println(desertIslandPlaylist.toString());
+        artists.remove("Andreas Johnson");
+System.out.println(artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+        System.out.println(desertIslandPlaylist.indexOf("You're Gorgeous"));
+        System.out.println(desertIslandPlaylist.indexOf("My World"));
+
+        String songToSwapOne = desertIslandPlaylist.get(4);
+System.out.println(songToSwapOne);
+        desertIslandPlaylist.set(4, "My World");
+        desertIslandPlaylist.set(3, songToSwapOne);
+
+       System.out.println("The songs in our playlist (in order) are " + desertIslandPlaylist.toString());
+
+        String artistToSwapOne = artists.get(4);
+        System.out.println(artistToSwapOne);
+        artists.set(4, "Avril Lavigne");
+        System.out.println(artists.toString());
+        artists.set(3, artistToSwapOne);
+
+
+
+        System.out.println("The artists in our playlist (in order) are " + artists.toString());
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.ArrayList;
+
+class Playlist {
+
+    public static void main(String[] args) {
+
+
+        ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+        ArrayList<String> artists = new ArrayList<String>();
+
+        desertIslandPlaylist.add("Glorius");
+        desertIslandPlaylist.add("I bet you look good on the dancefloor");
+        desertIslandPlaylist.add("I love you");
+        desertIslandPlaylist.add("Things I'll never say");
+        desertIslandPlaylist.add("My World");
+        desertIslandPlaylist.add("You're Gorgeous");
+
+
+        artists.add("Andreas Johnson");
+        artists.add("Arctic Monkeys");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Bluebird");
+
+System.out.println(desertIslandPlaylist.get(0));
+System.out.println(desertIslandPlaylist.toString());
+
+System.out.println(artists.get(0));
+System.out.println(artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+        desertIslandPlaylist.remove("Glorius");
+System.out.println(desertIslandPlaylist.toString());
+        artists.remove("Andreas Johnson");
+System.out.println(artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+       int positionOfSongOneToSwop = (desertIslandPlaylist.indexOf("You're Gorgeous"));
+        int positionOfSongTwoToSwop = (desertIslandPlaylist.indexOf("My World"));
+
+        String songToSwopOne = desertIslandPlaylist.get(positionOfSongOneToSwop);
+        String songToSwopTwo = desertIslandPlaylist.get(positionOfSongTwoToSwop);
+System.out.println(songToSwapOne);
+        desertIslandPlaylist.set(positionOfSongOneToSwop, songToSwopTwo);
+        desertIslandPlaylist.set(positionOfSongTwoToSwop, songToSwopOne);
+
+       System.out.println("The songs in our playlist (in order) are " + desertIslandPlaylist.toString());
+
+        String artistToSwapOne = artists.get(4);
+        System.out.println(artistToSwapOne);
+        artists.set(4, "Avril Lavigne");
+        System.out.println(artists.toString());
+        artists.set(3, artistToSwapOne);
+
+
+
+        System.out.println("The artists in our playlist (in order) are " + artists.toString());
+
+
+    }
+
+}
+
+
+
+
+
+
+
+import java.util.ArrayList;
+
+class Playlist {
+
+    public static void main(String[] args) {
+
+
+        ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+        ArrayList<String> artists = new ArrayList<String>();
+
+        desertIslandPlaylist.add("Glorius");
+        desertIslandPlaylist.add("I bet you look good on the dancefloor");
+        desertIslandPlaylist.add("I love you");
+        desertIslandPlaylist.add("Things I'll never say");
+        desertIslandPlaylist.add("My World");
+        desertIslandPlaylist.add("You're Gorgeous");
+
+
+        artists.add("Andreas Johnson");
+        artists.add("Arctic Monkeys");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Avril Lavigne");
+        artists.add("Bluebird");
+
+//System.out.println(desertIslandPlaylist.get(0));
+System.out.println("The following playlist contains these songs (in order)" + desertIslandPlaylist.toString());
+
+//System.out.println(artists.get(0));
+System.out.println("The artists for the songs in this playlist (in order) are" + artists.toString());
+
+//System.out.println(desertIslandPlaylist.size());
+
+        desertIslandPlaylist.remove("Glorius");
+System.out.println("The following playlist contains these songs (in order)" + desertIslandPlaylist.toString());
+        artists.remove("Andreas Johnson");
+System.out.println("The artists for the songs in this playlist (in order) are" + artists.toString());
+
+System.out.println(desertIslandPlaylist.size());
+
+       int positionOfSongOneToSwop = (desertIslandPlaylist.indexOf("You're Gorgeous"));
+        int positionOfSongTwoToSwop = (desertIslandPlaylist.indexOf("My World"));
+
+        String songToSwopOne = desertIslandPlaylist.get(positionOfSongOneToSwop);
+        String songToSwopTwo = desertIslandPlaylist.get(positionOfSongTwoToSwop);
+//System.out.println(songToSwapOne);
+        desertIslandPlaylist.set(positionOfSongOneToSwop, songToSwopTwo);
+        desertIslandPlaylist.set(positionOfSongTwoToSwop, songToSwopOne);
+
+       System.out.println("The following playlist contains these songs (in order)" + desertIslandPlaylist.toString());
+
+      String artistToSwopOne = artists.get(positionOfSongOneToSwop);
+      String artistToSwopTwo = artists.get(positionOfSongTwoToSwop);
+
+        //System.out.println(artistToSwapOne);
+        artists.set(positionOfSongOneToSwop, positionOfSongTwoToSwop);
+       // System.out.println(artists.toString());
+        artists.set(positionOfSongTwoToSwop, artistToSwopOne);
+
+        System.out.println("The artists for the songs in this playlist (in order) are" + artists.toString());
+
+
+    }
+
+}

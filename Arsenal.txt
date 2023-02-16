@@ -1,0 +1,419 @@
+public class Arsenal {
+
+String playerName;
+int age;
+double shooting;
+double defending;
+double passing;
+double goalkeeping;
+double value;
+String nationality;
+boolean isFit;
+
+public Arsenal (String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition){
+int age = int yearsOld;
+shooting = abilityShoot;
+defending = abilityDefend;
+passing = abilityPass;
+goalkeeping = abilityInGoal;
+value = costToBuy;
+nationality = countryPlaysFor;
+isFit = goodCondition;
+}
+
+
+public void checkAbility(){
+System.out.println(firstnameSurname + " has " + shooting + " shooting ability " + defending + " defending ability " + passing + " passing ability " + goalkeeping + " goalkeeping ability ");
+}
+
+public double shootingIncrease(double increaseShootingAmount){
+double afterShootingIncrease = shooting + increaseShootingAmount;
+shooting = afterShootingIncrease;
+System.out.println("Shooting has increased to " + shooting);
+
+}
+
+public static void main(String[] args){
+Arsenal viera = new Arsenal(FabioViera, 24, 78, 65, 89, 40, 20000000, Portugal, true);
+
+viera.checkAbility();
+viera.shootingIncrease(2);
+
+}
+
+}
+
+
+
+
+public class Arsenal {
+
+String playerName;
+int age;
+double shooting;
+double defending;
+double passing;
+double goalkeeping;
+double value;
+String nationality;
+boolean isFit;
+
+public Arsenal(String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition) {
+  
+playerName = firstnameSurname;
+age = yearsOld;
+shooting = abilityShoot;
+defending = abilityDefend;
+passing = abilityPass;
+goalkeeping = abilityInGoal;
+value = costToBuy;
+nationality = countryPlaysFor;
+isFit = goodCondition;
+}
+
+
+public void checkAbility(){
+System.out.println(playerName + " has " + shooting + " shooting ability " + defending + " defending ability " + passing + " passing ability " + goalkeeping + " goalkeeping ability ");
+}
+
+public double shootingIncrease(double increaseShootingAmount){
+double afterShootingIncrease = shooting + increaseShootingAmount;
+shooting = afterShootingIncrease;
+System.out.println("Shooting has increased to " + shooting);
+}
+
+public static void main(String[] args){
+Arsenal viera = new Arsenal(viera, 24, 78, 65, 89, 40, 20000000, portugal, true);
+
+viera.checkAbility();
+viera.shootingIncrease(2);
+
+}
+
+}
+
+
+
+
+public class Arsenal {
+
+String playerName;
+int age;
+double shooting;
+double defending;
+double passing;
+double goalkeeping;
+double value;
+String nationality;
+boolean isFit;
+
+public Arsenal(String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition) {
+  
+playerName = firstnameSurname;
+age = yearsOld;
+shooting = abilityShoot;
+defending = abilityDefend;
+passing = abilityPass;
+goalkeeping = abilityInGoal;
+value = costToBuy;
+nationality = countryPlaysFor;
+isFit = goodCondition;
+}
+
+
+public void checkAbility(){
+System.out.println(playerName + " has " + shooting + " shooting ability " + defending + " defending ability " + passing + " passing ability " + goalkeeping + " goalkeeping ability ");
+}
+
+public double shootingIncrease(double increaseShootingAmount){
+double afterShootingIncrease = shooting + increaseShootingAmount;
+shooting = afterShootingIncrease;
+System.out.println("Shooting has increased to " + shooting);
+}
+
+public static void main(String[] args){
+Arsenal viera = new Arsenal(viera, 24, 78, 65, 89, 40, 20000000, portugal, true);
+
+viera.checkAbility();
+viera.shootingIncrease(2);
+
+}
+
+}
+
+
+public class Arsenal {
+
+String playerName;
+int age;
+double shooting;
+double defending;
+double passing;
+double goalkeeping;
+double value;
+String nationality;
+boolean isFit;
+
+public Arsenal(String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition) {
+  
+playerName = firstnameSurname;
+age = yearsOld;
+shooting = abilityShoot;
+defending = abilityDefend;
+passing = abilityPass;
+goalkeeping = abilityInGoal;
+value = costToBuy;
+nationality = countryPlaysFor;
+isFit = goodCondition;
+}
+
+
+public void checkAbility(){
+System.out.println(playerName + " has " + shooting + " shooting ability, " + defending + " defending ability, " + passing + " passing ability, " + goalkeeping + " goalkeeping ability.");
+}
+
+public double shootingIncrease(double increaseShootingAmount){
+double afterShootingIncrease = shooting + increaseShootingAmount;
+shooting = afterShootingIncrease;
+System.out.println(playerName + " shooting has increased to " + shooting + ".");
+return increaseShootingAmount;
+}
+
+public static void main(String[] args){
+Arsenal fabio = new Arsenal("Fabio Viera", 24, 78, 65, 89, 40, 20000000, "Portugal", true);
+
+fabio.checkAbility();
+fabio.shootingIncrease(2);
+
+Arsenal Odegaard = new Arsenal("Martin Odegaard", 22, 79, 70, 91, 40, 25000000, "Norway", true);
+
+Odegaard.checkAbility();
+Odegaard.shootingIncrease(1);
+
+}
+
+}
+
+
+
+
+public class Arsenal {
+
+String playerName;
+int age;
+double shooting;
+double defending;
+double passing;
+double goalkeeping;
+double value;
+String nationality;
+boolean isFit;
+
+public Arsenal(String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition) {
+  
+playerName = firstnameSurname;
+age = yearsOld;
+shooting = abilityShoot;
+defending = abilityDefend;
+passing = abilityPass;
+goalkeeping = abilityInGoal;
+value = costToBuy;
+nationality = countryPlaysFor;
+isFit = goodCondition;
+}
+
+
+public void checkAbility(){
+System.out.println(playerName + " has " + shooting + " shooting ability, " + defending + " defending ability, " + passing + " passing ability, " + goalkeeping + " goalkeeping ability.");
+}
+
+public double shootingIncrease(double increaseShootingAmount){
+double afterShootingIncrease = shooting + increaseShootingAmount;
+shooting = afterShootingIncrease;
+System.out.println(playerName + " shooting has increased to " + shooting + ".");
+return increaseShootingAmount;
+}
+
+public double allStatIncrease(double increaseAllStats){
+double afterShootingStatIncrease = shooting + increaseAllStats;
+shooting = afterShootingStatIncrease;
+double afterDefendingStatIncrease = defending + increaseAllStats;
+defending = afterDefendingStatIncrease;
+double afterPassingStatIncrease = passing + increaseAllStats;
+passing = afterPassingStatIncrease;
+double afterGoalkeepingStatIncrease = goalkeeping + increaseAllStats;
+goalkeeping = afterGoalkeepingStatIncrease;
+System.out.println(playerName + " has increased by " + increaseAllStats + " to " + shooting + " shooting ability, has increased by " + increaseAllStats + " to " + defending + " defending ability, has increased by " + increaseAllStats + " to " + passing + " passing ability, has increased by " + increaseAllStats + " to " + goalkeeping + " goalkeeping ability.");
+return increaseAllStats;
+
+}
+
+public static void main(String[] args){
+Arsenal fabio = new Arsenal("Fabio Viera", 24, 78, 65, 89, 40, 20000000, "Portugal", true);
+
+fabio.checkAbility();
+fabio.shootingIncrease(2);
+
+Arsenal Odegaard = new Arsenal("Martin Odegaard", 22, 79, 70, 91, 40, 25000000, "Norway", true);
+
+Odegaard.checkAbility();
+Odegaard.shootingIncrease(1);
+Odegaard.allStatIncrease(10);
+
+fabio.allStatIncrease(6);
+
+}
+
+}
+
+
+
+
+
+public class Arsenal {
+
+    String playerName;
+    int age;
+    double shooting;
+    double defending;
+    double passing;
+    double goalkeeping;
+    double value;
+    String nationality;
+    boolean isFit;
+
+    public Arsenal(String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition) {
+
+        playerName = firstnameSurname;
+        age = yearsOld;
+        shooting = abilityShoot;
+        defending = abilityDefend;
+        passing = abilityPass;
+        goalkeeping = abilityInGoal;
+        value = costToBuy;
+        nationality = countryPlaysFor;
+        isFit = goodCondition;
+    }
+
+
+    public void checkAbility(){
+        System.out.println(playerName + " has " + shooting + " shooting ability, " + defending + " defending ability, " + passing + " passing ability, " + goalkeeping + " goalkeeping ability.");
+    }
+
+    public double shootingIncrease(double increaseShootingAmount){
+        double afterShootingIncrease = shooting + increaseShootingAmount;
+        shooting = afterShootingIncrease;
+        System.out.println(playerName + " shooting has increased to " + shooting + ".");
+        return increaseShootingAmount;
+    }
+
+    public double allStatIncrease(double increaseAllStats){
+        double afterShootingStatIncrease = shooting + increaseAllStats;
+        shooting = afterShootingStatIncrease;
+        double afterDefendingStatIncrease = defending + increaseAllStats;
+        defending = afterDefendingStatIncrease;
+        double afterPassingStatIncrease = passing + increaseAllStats;
+        passing = afterPassingStatIncrease;
+        double afterGoalkeepingStatIncrease = goalkeeping + increaseAllStats;
+        goalkeeping = afterGoalkeepingStatIncrease;
+        System.out.println(playerName + " has increased all stats by " + increaseAllStats + " to " + shooting + " shooting ability, " + defending + " defending ability, " + passing + " passing ability, " + goalkeeping + " goalkeeping ability.");
+        return increaseAllStats;
+
+    }
+
+    public static void main(String[] args){
+        Arsenal fabio = new Arsenal("Fabio Viera", 24, 78, 65, 89, 40, 20000000, "Portugal", true);
+
+        fabio.checkAbility();
+        fabio.shootingIncrease(2);
+
+        Arsenal Odegaard = new Arsenal("Martin Odegaard", 22, 79, 70, 91, 40, 25000000, "Norway", true);
+        Arsenal Ramsdale = new Arsenal("Aaron Ramsdale", 24, 40, 67, 86, 87, 25000000, "England", true);
+
+        Odegaard.checkAbility();
+        Odegaard.shootingIncrease(1);
+        Odegaard.allStatIncrease(10);
+
+        fabio.allStatIncrease(6);
+        Ramsdale.checkAbility();
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+public class Arsenal {
+
+    String playerName;
+    int age;
+    double shooting;
+    double defending;
+    double passing;
+    double goalkeeping;
+    double value;
+    String nationality;
+    boolean isFit;
+
+    public Arsenal(String firstnameSurname, int yearsOld, double abilityShoot, double abilityDefend, double abilityPass, double abilityInGoal, double costToBuy, String countryPlaysFor, boolean goodCondition) {
+
+        playerName = firstnameSurname;
+        age = yearsOld;
+        shooting = abilityShoot;
+        defending = abilityDefend;
+        passing = abilityPass;
+        goalkeeping = abilityInGoal;
+        value = costToBuy;
+        nationality = countryPlaysFor;
+        isFit = goodCondition;
+    }
+
+
+    public void checkAbility(){
+        System.out.println(playerName + " has " + shooting + " shooting ability, " + defending + " defending ability, " + passing + " passing ability, " + goalkeeping + " goalkeeping ability.");
+    }
+
+    public double shootingIncrease(double increaseShootingAmount){
+        double afterShootingIncrease = shooting + increaseShootingAmount;
+        shooting = afterShootingIncrease;
+        System.out.println(playerName + " shooting has increased to " + shooting + ".");
+        return increaseShootingAmount;
+    }
+
+    public double allStatIncrease(double increaseAllStats){
+        shooting += increaseAllStats;
+        defending += increaseAllStats;
+        passing += increaseAllStats;
+        goalkeeping += increaseAllStats;
+        System.out.println(playerName + " has increased all stats by " + increaseAllStats + " to " + shooting + " shooting ability, " + defending + " defending ability, " + passing + " passing ability, " + goalkeeping + " goalkeeping ability.");
+        return increaseAllStats;
+
+    }
+
+    public static void main(String[] args){
+        Arsenal fabio = new Arsenal("Fabio Viera", 24, 78, 65, 89, 40, 20000000, "Portugal", true);
+
+        fabio.checkAbility();
+        fabio.shootingIncrease(2);
+
+        Arsenal Odegaard = new Arsenal("Martin Odegaard", 22, 79, 70, 91, 40, 25000000, "Norway", true);
+        Arsenal Ramsdale = new Arsenal("Aaron Ramsdale", 24, 40, 67, 86, 87, 25000000, "England", true);
+
+        Odegaard.checkAbility();
+        Odegaard.shootingIncrease(1);
+        Odegaard.allStatIncrease(10);
+
+        fabio.allStatIncrease(6);
+        Ramsdale.checkAbility();
+
+    }
+
+}
+
+

@@ -1,0 +1,51 @@
+public class Continents {
+	
+// This program tells you what the largest city is in a given continent.  
+  
+    
+  
+  
+  
+  public static void main(String[] args) {
+
+
+String continent = "Europe";
+
+		
+switch (continent) {
+  case "North America":
+  System.out.print("The biggest city in the continent of ");
+System.out.println("North America is Mexico City, Mexico.");
+  break;
+  case "South America":
+  System.out.print("The biggest city in the continent of ");
+	System.out.println("South America is Sao Paulo, Brazil.");
+  break;
+    case "Europe":
+    System.out.print("The biggest city in the continent of ");
+	System.out.println("Europe is Moscow, Russia.");
+  break;
+  case "Africa":
+  System.out.print("The biggest city in the continent of ");
+	System.out.println("Africa is Lagos, Nigeria.");
+  break;
+  case "Asia":
+  System.out.print("The biggest city in the continent of ");
+	System.out.println("Asia is Shanghai, China.");
+  break;
+  case "Austrailia":
+  System.out.print("The biggest city in the continent of ");
+	System.out.println("Austrailia is Sydney, Australia.");
+  break;
+  case "Antarctica":
+  System.out.print("The biggest city in the continent of ");
+	System.out.println("Antarctica is McMurdo, Station, US.");
+  break;
+  default:
+  System.out.println("Undefined continent!");
+
+}
+
+
+  }
+}

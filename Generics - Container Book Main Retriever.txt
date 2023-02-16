@@ -1,0 +1,94 @@
+public interface Retriever<T> {
+
+T retrieveData();
+
+}
+
+
+
+
+
+
+
+
+// must use <String> not <T> as the returns will be Strings
+
+public class Book implements Retriever<String> {
+  private String name;
+
+  public Book(String name) {
+    this.name = name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getName() {
+    return this.name;
+  }
+
+@Override
+// overriding retrieveData so that it returns book name when used in book class.
+public String retrieveData(){
+return this.name;
+}
+
+}
+
+
+
+
+
+
+
+public class Container<T> implements Retriever<T> {
+  private T data;
+
+  public Container(T data) {
+    this.data = data;
+  }
+
+  public void setData(T data) {
+    this.data = data;
+  }
+
+  public T getData() {
+    return this.data;
+  }
+
+  @Override
+  //use return type as T rather than String, int, double etc as stated in class definition 'Retriever <T>'
+public T retrieveData(){
+return this.data;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+public class Main {
+  public static void main(String[] args) {
+    int myNumber = 24;
+    String bookName = "Hello Book!";
+    // Enter your code below...
+
+//Use Retriever<Integer> and Retriever<String>  rather than Container<Integer> and Book<String> as we are using these generic and non generic classes.
+Retriever<Integer> containerRetriever = new Container<> (myNumber);
+Retriever<String> bookRetriever = new Book(bookName);
+
+System.out.println(containerRetriever.retrieveData());
+System.out.println(bookRetriever.retrieveData());
+
+  }
+}
+
+
+

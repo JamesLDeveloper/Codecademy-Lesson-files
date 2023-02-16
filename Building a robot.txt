@@ -1,0 +1,353 @@
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, int batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.print.out(droidName + "has a battery level of " + batteryLevel);
+}
+
+public static void performingATask(){
+}
+
+
+public static void stateBatteryLevel(){
+System.print.out("The battery level is " + batteryLevel);
+}
+
+public static void main(String [] args){
+Droid Codey = new Droid(Codey, 100);
+Codey.stateBatteryLevel();
+}
+
+}
+
+
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, int batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.println(droidName + "has a battery level of " + batteryLevel);
+}
+
+public static void performingATask(){
+}
+
+
+public static void stateBatteryLevel(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100);
+Codey.stateBatteryLevel();
+}
+
+}
+
+
+
+
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, int batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void performingATask(){
+}
+
+public String toString(String greeting){
+System.out.println("Hello, I'm the droid: " + name + ".");
+return greeting;
+}
+
+
+public void stateBatteryLevel(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100);
+Codey.stateBatteryLevel();
+Codey.toString();
+}
+
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, int batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void performingATask(){
+}
+
+public String toString(){
+return "Hello, I'm the droid: " + name + ".";
+}
+
+
+public void stateBatteryLevel(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100);
+Codey.stateBatteryLevel();
+Codey.toString();
+System.out.println(Codey);
+}
+
+}
+
+
+
+
+
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, int batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void performTask(String task){
+System.out.println(name + " is performing task " + task);  
+}
+
+public String toString(){
+return "Hello, I'm the droid: " + name + ".";
+}
+
+public void stateBatteryLevel(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100);
+Codey.stateBatteryLevel();
+Codey.toString();
+System.out.println(Codey);
+Codey.performTask("running");
+Codey.batteryLevel -= 10;
+Codey.name = "Codey the running machine";
+Codey.stateBatteryLevel();
+System.out.println(Codey);
+}
+
+}
+
+
+
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, int batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void performTask(String task){
+System.out.println(name + " is performing task " + task);  
+}
+
+public String toString(){
+return "Hello, I'm the droid: " + name + ".";
+}
+
+public void stateBatteryLevel(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public String energyReport(){
+return ("The battery level is " + batteryLevel);
+}
+
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100);
+Codey.stateBatteryLevel();
+Codey.toString();
+System.out.println(Codey);
+Codey.performTask("running");
+Codey.batteryLevel -= 10;
+Codey.name = "Codey the running machine";
+Codey.stateBatteryLevel();
+System.out.println(Codey);
+Codey.energyReport();
+}
+
+}
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, double batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void performTask(String task, double energyDrain){
+System.out.println(name + " is performing task " + task);
+double afterTaskBatteryLevel = batteryLevel - energyDrain;
+batteryLevel = afterTaskBatteryLevel;
+System.out.println("The new battery level is " + batteryLevel);  
+}
+
+public String toString(){
+  System.out.println("Hello, I'm the droid: " + name + ".");
+return "Hello, I'm the droid: " + name + ".";
+}
+
+public void stateBatteryLevel(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public void energyReport(){
+System.out.println("The battery level is " + batteryLevel);
+}
+
+public void energyTransfer(double changeBatteryLevel){
+double newBatteryLevel = batteryLevel + changeBatteryLevel;
+batteryLevel = newBatteryLevel;
+System.out.println("The new battery level is " + batteryLevel);
+}  
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100); 
+/*when you create a new entry using constructor method it will also run any other tasks within constructor method. e.g. system.out.println() */
+Codey.stateBatteryLevel();
+Codey.toString();
+Codey.performTask("running", 30);
+Codey.batteryLevel -= 10;
+Codey.stateBatteryLevel();
+Codey.name = "Codey the running machine";
+Codey.toString();
+Codey.batteryLevel -= 10;
+Codey.energyReport();
+Codey.energyTransfer(50);
+
+}
+
+}
+
+
+
+
+
+
+public class Droid {
+
+String name;
+double batteryLevel;
+
+public Droid(String droidName, double batteryChargeLevel){
+name = droidName;
+batteryLevel = batteryChargeLevel;
+System.out.print("Hello, I'm the droid: " + name + ".");
+System.out.println(" I have a battery level of " + batteryLevel);
+}
+
+public void performTask(String task, double energyDrain){
+if (batteryLevel >= energyDrain){
+System.out.print(name + " is performing a task. They are " + task + ". ");
+double afterTaskBatteryLevel = batteryLevel - energyDrain;
+batteryLevel = afterTaskBatteryLevel;
+System.out.println(name + " has a new battery level of " + batteryLevel);
+}
+else{
+  System.out.println(name + " does not have enough battery to do task. They are not " + task + ".");
+}  
+}
+
+public String toString(){
+  System.out.println("Hello, I'm the droid: " + name + ".");
+return "Hello, I'm the droid: " + name + ".";
+}
+
+public void stateBatteryLevel(){
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void energyReport(){
+System.out.println(name + " has a battery level of " + batteryLevel);
+}
+
+public void energyTransfer(double changeBatteryLevel){
+double newBatteryLevel = batteryLevel + changeBatteryLevel;
+batteryLevel = newBatteryLevel;
+System.out.println(name + "'s battery level has changed. Their new battery level is " + batteryLevel);
+}  
+
+public static void main(String [] args){
+Droid Codey = new Droid("Codey", 100); 
+/*when you create a new entry using constructor method it will also run any other tasks within constructor method. e.g. system.out.println() */
+Codey.performTask("running", 30);
+Codey.batteryLevel -= 10;
+Codey.stateBatteryLevel();
+Codey.name = "Codey the running machine";
+Codey.toString();
+Codey.batteryLevel -= 10;
+Codey.energyReport();
+Codey.energyTransfer(50);
+
+Droid Hercules = new Droid("Hercules", 100);
+Droid Kevin = new Droid("Kevin", 100);
+Kevin.performTask("dancing", 5);
+Kevin.energyTransfer(5);
+Kevin.performTask("jumping", 200);
+Kevin.stateBatteryLevel();
+Kevin.performTask("walking", 20);
+
+}
+
+}

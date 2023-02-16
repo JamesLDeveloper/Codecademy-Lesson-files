@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+
+class PrimeDirective {
+
+    // Add your methods here:
+    public static boolean isPrime(){
+
+        int numberToDivide;
+        int divisor;
+
+        numberToDivide = 18;
+        boolean prime = false;
+
+        for (divisor = 2; divisor < numberToDivide; divisor++){
+            if ((numberToDivide % divisor) == 0) {
+                prime = false;
+        } else {
+                prime = true;
+            }
+//            System.out.println(numberToDivide + "is a prime:" + prime);
+        }
+return prime;
+    }
+
+/* if ((number % x) != 0)
+{
+return true;
+} else {
+  return false;
+
+  }
+
+  }
+
+*/
+
+
+
+
+    public static void main(String[] args) {
+
+        PrimeDirective pd = new PrimeDirective();
+        int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
+
+        PrimeDirective.isPrime();
+
+    }
+
+}

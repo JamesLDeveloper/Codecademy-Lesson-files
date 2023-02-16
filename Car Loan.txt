@@ -1,0 +1,421 @@
+Car Loan
+
+
+
+
+
+
+public class CarLoan {
+	
+  double carLoan;
+  double loanLength;
+  double interestRate;
+  double downPayment;
+  
+public CarLoan(double loanAmount, double loanInYears, double rateOfInterest, double deposit){
+
+carLoan = loanAmount;
+loanLength = loanInYears;
+interestRate = rateOfInterest;
+downPayment = deposit;
+
+}
+
+
+public double compoundInterest(){
+
+    double a = interestRate;
+    double b = loanLength;
+    System.out.println(Math.pow(a, b)); 
+    return (Math.pow(a, b)); 
+
+
+}
+
+
+
+
+
+public double checkValidity(){
+if(carLoan <= 0 || interestRate <=0 || downPayment >= carLoan) {
+System.out.println("Error! This loan request is invalid. Please specify a correct loan length and interest rate.");
+return 0;
+  }
+else {
+System.out.println("You have successfully applied for a loan.");
+System.out.println("The car can be paid in full.");
+double months = loanLength*12;
+double monthlyPayment = ((interestRate *= interestRate)*(carLoan-downPayment)) / (months);
+System.out.println("Monthly Payments will be £" + monthlyPayment + ".");
+return 0;
+}
+
+}
+
+
+  
+  public static void main(String[] args) {
+
+CarLoan James = new CarLoan(10000, 3, 1.05, 2000);
+James.checkValidity();
+
+       
+      
+
+	}
+}
+
+
+
+
+
+
+public class CarLoan {
+	
+  double carLoan;
+  double loanLength;
+  double interestRate;
+  double downPayment;
+  
+public CarLoan(double loanAmount, double loanInYears, double rateOfInterest, double deposit){
+
+carLoan = loanAmount;
+loanLength = loanInYears;
+interestRate = rateOfInterest;
+downPayment = deposit;
+
+}
+
+
+public double compoundInterest(){
+
+    double a = interestRate;
+    double b = loanLength;
+    System.out.println(Math.pow(a, b)); 
+    return 0; 
+
+
+}
+
+
+
+
+
+public double checkValidity(){
+
+if(carLoan <= 0 || interestRate <=0 || downPayment >= carLoan) {
+System.out.println("Error! This loan request is invalid. Please specify a correct loan length and interest rate.");
+return 0;
+  }
+else {
+System.out.println("You have successfully applied for a loan.");
+System.out.println("The car can be paid in full.");
+
+double months = loanLength*12; 
+   
+double monthlyPayment =((Math.pow(interestRate, loanLength))*(carLoan-downPayment)) / (months);
+System.out.println("Monthly Payments will be £" + monthlyPayment + ".");
+return 0;
+}
+
+}
+
+
+  
+  public static void main(String[] args) {
+
+CarLoan James = new CarLoan(10000, 3, 1.05, 2000);
+James.checkValidity();
+James.compoundInterest();
+
+       
+      
+
+	}
+}
+
+
+
+
+
+
+
+public class CarLoan {
+	
+  double carLoan;
+  double loanLength;
+  double interestRate;
+  double downPayment;
+  String name;
+  
+public CarLoan(String nameFirstLast, double loanAmount, double loanInYears, double rateOfInterest, double deposit){
+
+name = nameFirstLast;
+carLoan = loanAmount;
+loanLength = loanInYears;
+interestRate = rateOfInterest;
+downPayment = deposit;
+
+}
+
+
+public double compoundInterest(){
+
+     System.out.println("Your compound interest will be " + Math.pow(interestRate, loanLength)); 
+    return 0; 
+
+
+}
+
+
+
+
+
+public double checkValidity(){
+
+if(carLoan <= 0 || interestRate <=0 || downPayment >= carLoan) {
+System.out.println("Error! " + name + ", this loan request is invalid. Please specify a correct loan length, amount and interest rate.");
+return 0;
+  }
+else {
+System.out.println(name + " You have successfully applied for a loan.");
+System.out.println("The car can be paid in full.");
+
+double months = loanLength*12; 
+   
+double monthlyPayment =((Math.pow(interestRate, loanLength))*(carLoan-downPayment)) / (months);
+System.out.println("Monthly Payments will be £" + monthlyPayment + ".");
+return 0;
+}
+
+}
+
+
+  
+  public static void main(String[] args) {
+
+CarLoan James = new CarLoan("James", 10000, 3, 1.05, 2000);
+James.checkValidity();
+James.compoundInterest();
+CarLoan Hippo = new CarLoan("Hungry Hippo", 0, 4, 1.05, 3000);
+Hippo.checkValidity();
+Hippo.carLoan = 50000;
+Hippo.checkValidity();
+
+
+
+       
+      
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class CarLoan {
+	
+  //This program allows someone to apply for a loan, calculates their monthly interest and monthly payments.
+
+  double carLoan;
+  double loanLength;
+  double interestRate;
+  double downPayment;
+  String name;
+  
+public CarLoan(String nameFirstLast, double loanAmount, double loanInYears, double rateOfInterest, double deposit){
+
+name = nameFirstLast;
+carLoan = loanAmount;
+loanLength = loanInYears;
+interestRate = rateOfInterest;
+downPayment = deposit;
+
+}
+
+
+public double compoundInterest(){
+
+     System.out.println("Your compound interest will be " + Math.pow(interestRate, loanLength)); 
+    return 0; 
+
+
+}
+
+
+
+
+
+public double checkValidity(){
+
+if(carLoan <= 0 || interestRate <=0 || downPayment >= carLoan) {
+System.out.println("Error! " + name + ", this loan request is invalid. Please specify a correct loan length, amount and interest rate.");
+return 0;
+  }
+else {
+System.out.println(name + " You have successfully applied for a loan.");
+System.out.println("The car can be paid in full.");
+
+
+double remainingBalance = carLoan - downPayment; 
+double months = loanLength*12;
+double monthlyBalance = remainingBalance / months;
+double interest = monthlyBalance *(interestRate-1);
+double monthlyPayment = monthlyBalance *interestRate;
+
+System.out.println("Monthly interest will be £" + interest + ". " + " Monthly payments will be £" + monthlyPayment + ".");
+return 0;
+}
+
+}
+
+
+  
+  public static void main(String[] args) {
+
+CarLoan James = new CarLoan("James", 10000, 3, 1.05, 2000);
+James.checkValidity();
+James.compoundInterest();
+CarLoan Hippo = new CarLoan("Hungry Hippo", 0, 4, 1.05, 3000);
+Hippo.checkValidity();
+Hippo.carLoan = 50000;
+Hippo.checkValidity();
+
+
+
+       
+      
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class CarLoan {
+	
+  //This program allows someone to apply for a loan, calculates their monthly interest and monthly payments.
+
+  double carLoan;
+  double loanLength;
+  double interestRate;
+  double downPayment;
+  String name;
+  
+public CarLoan(String nameFirstLast, double loanAmount, double loanInYears, double rateOfInterest, double deposit){
+
+name = nameFirstLast;
+carLoan = loanAmount;
+loanLength = loanInYears;
+interestRate = rateOfInterest;
+downPayment = deposit;
+
+if(carLoan <= 0 || interestRate <=0 || downPayment >= carLoan) {
+System.out.println("Error! " + name + ", this loan request is invalid. Please specify a correct loan length, amount and interest rate.");
+  }
+else {
+System.out.println(name + " You have successfully applied for a loan.");
+System.out.println("The car can be paid in full.");
+
+
+double remainingBalance = carLoan - downPayment; 
+double months = loanLength*12;
+double monthlyBalance = remainingBalance / months;
+double interest = monthlyBalance *(interestRate-1);
+double monthlyPayment = monthlyBalance *interestRate;
+
+System.out.println("Monthly interest will be £" + interest + ". " + " Monthly payments will be £" + monthlyPayment + ".");
+}
+
+
+
+}
+
+
+public double compoundInterest(){
+
+     System.out.println("Your compound interest will be " + Math.pow(interestRate, loanLength)); 
+    return 0; 
+
+
+}
+
+
+
+
+
+public double checkValidity(){
+
+if(carLoan <= 0 || interestRate <=0 || downPayment >= carLoan) {
+System.out.println("Error! " + name + ", this loan request is invalid. Please specify a correct loan length, amount and interest rate.");
+return 0;
+  }
+else {
+System.out.println(name + " You have successfully applied for a loan.");
+System.out.println("The car can be paid in full.");
+
+
+double remainingBalance = carLoan - downPayment; 
+double months = loanLength*12;
+double monthlyBalance = remainingBalance / months;
+double interest = monthlyBalance *(interestRate-1);
+double monthlyPayment = monthlyBalance *interestRate;
+
+System.out.println("Monthly interest will be £" + interest + ". " + " Monthly payments will be £" + monthlyPayment + ".");
+return 0;
+}
+
+}
+
+
+  
+  public static void main(String[] args) {
+
+CarLoan James = new CarLoan("James", 10000, 3, 1.05, 2000);
+James.compoundInterest();
+CarLoan Hippo = new CarLoan("Hungry Hippo", 0, 4, 1.05, 3000);
+Hippo.carLoan = 50000;
+Hippo.checkValidity();
+
+
+
+       
+      
+
+	}
+}

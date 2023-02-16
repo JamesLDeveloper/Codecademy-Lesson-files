@@ -1,0 +1,151 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class PrimeDirective {
+
+    // Add your methods here:
+    public boolean isPrime(int numberToDivide) {
+
+        int number;
+        boolean isPrimeNumber;
+        isPrimeNumber = false;
+        int divisor;
+
+        if (numberToDivide == 2) {
+            return true;
+        } else if (numberToDivide < 2) {
+            return false;
+        } else {
+
+            for (divisor = 2; divisor < numberToDivide; divisor++) {
+                if ((numberToDivide % divisor) == 0) {
+                    isPrimeNumber = false;
+
+                    break;
+
+                } else {
+                    isPrimeNumber = true;
+
+
+
+                }
+
+            }
+
+            return isPrimeNumber;
+        }
+
+    }
+
+//        int numberToDivide
+//       int divisor;
+
+//        numberToDivide = 18;
+//        boolean prime = false;
+
+ //       for (divisor = 2; divisor < numberToDivide; divisor++){
+ //           if ((numberToDivide % divisor) == 0) {
+  //              prime = false;
+  //          } else {
+  //              prime = true;
+  //          }
+//            System.out.println(numberToDivide + "is a prime:" + prime);
+ //       }
+ //       return prime;
+
+
+/* if ((number % x) != 0)
+{
+return true;
+} else {
+  return false;
+
+  }
+
+  }
+
+*/
+
+/* The below creates a new method which builds an ArrayList of <Integer>s called onlyPrimes
+
+
+ */
+
+public ArrayList<Integer> onlyPrimes(int[] numbers) {
+
+ ArrayList<Integer> primes = new ArrayList<Integer>();
+
+ //below checks through ArrayList 'numbers' to see if any of them are prime numbers.
+
+for (int numberToDivide: numbers) {
+   if (isPrime(numberToDivide)) {
+       primes.add(numberToDivide);
+       System.out.println(numberToDivide + " is Prime");
+   }
+System.out.println(numberToDivide +" is not Prime");
+
+    }
+return primes;
+}
+
+
+
+    public ArrayList<Integer> firstNPrimes(int[] ) {
+
+        ArrayList<Integer> checkingForPrimes = new ArrayList<Integer>();
+
+        //below checks through ArrayList 'numbers' to see if any of them are prime numbers.
+
+        for (int numberToDivide: numbersToCheck) {
+            if (isPrime(numberToDivide)) {
+                checkingForPrimes.add(numberToDivide);
+                System.out.println(numberToDivide + " is Prime");
+            }
+            System.out.println(numberToDivide +" is not Prime");
+
+        }
+        return numbersToCheck;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void main(String[] args) {
+
+        PrimeDirective pd = new PrimeDirective();
+        int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
+        int[] numbersToCheck;
+
+        int numbersTo100;
+        int i;
+        
+        for (i=0, i<100, i++);
+        
+        
+        
+        String numbersToCheck = Arrays.toString(numbers);
+
+
+        System.out.println(pd.isPrime(18));
+        System.out.println("The prime numbers from the Array 'numbers' are " + pd.onlyPrimes(numbers));
+
+/* to call method and give value to variable
+e.g. .isPrime();
+need to define what the variable is you want to change
+e.g. .isPrime(int numberToDivide);
+then call it in main
+e.g. pd.isPrime(6) pd.isPrime(where 6 is the value of numberToDivide)
+
+*/
+
+    }
+
+}
